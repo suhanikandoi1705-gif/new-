@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Years of Love - Anniversary Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i> 25 Years Together
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#gallery" class="nav-link">Memories</a></li>
+                <li><a href="#wishes" class="nav-link">Special Wishes</a></li>
+                <li><a href="#contact" class="nav-link">Messages</a></li>
+            </ul>
+            <div class="music-control">
+                <button id="musicToggle" class="music-btn" title="Toggle Music">
+                    <i class="fas fa-music"></i>
+                </button>
+                <span id="musicLabel">Music: ON</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/bollywood-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <div class="anniversary-badge">
+                <div class="badge-inner">
+                    <h1 class="anniversary-number">25</h1>
+                    <p class="anniversary-text">Years of</p>
+                    <p class="anniversary-text">Love & Togetherness</p>
+                </div>
+            </div>
+            <h2 class="hero-title">A Silver Jubilee Celebration</h2>
+            <p class="hero-subtitle">25 beautiful years of marriage, love, and cherished memories</p>
+            <button class="cta-button" onclick="scrollToSection('timeline')">Explore Our Story</button>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Journey Together</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p class="timeline-year">2001</p>
+                        <p>Two hearts met and a beautiful story began. The first day that changed everything forever.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Forever Promised</h3>
+                        <p class="timeline-year">2001 - Marriage Day</p>
+                        <p>A day filled with joy, family, and the promise to spend a lifetime together. Vows exchanged, hearts united.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>New Beginnings</h3>
+                        <p class="timeline-year">2005-2015</p>
+                        <p>Building a home, creating memories, and filling life with laughter and adventures together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Silver Jubilee</h3>
+                        <p class="timeline-year">2026</p>
+                        <p>Celebrating 25 years of unconditional love, support, and beautiful moments that shaped our lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our Precious Memories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/memory-1.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Wedding Day Magic</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/memory-2.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Moments Together</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/memory-3.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Family Joy</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/memory-4.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Adventures & Travels</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/memory-5.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Celebration Moments</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/memory-6.jpg')">
+                    <div class="gallery-overlay">
+                        <p>Love & Forever</p>
+                    </div>
+                </div>
+            </div>
+            <p class="gallery-note">📸 Add your favorite photos to the images folder to personalize this gallery</p>
+        </div>
+    </section>
+
+    <!-- Special Wishes Section -->
+    <section id="wishes" class="wishes-section">
+        <div class="container">
+            <h2 class="section-title">Reasons We Celebrate</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Unconditional Love</h3>
+                    <p>25 years of standing by each other through thick and thin, with love that only grows stronger.</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Perfect Partnership</h3>
+                    <p>Two souls complementing each other, building a life filled with trust and mutual respect.</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-laugh"></i>
+                    </div>
+                    <h3>Endless Laughter</h3>
+                    <p>Countless moments of joy, inside jokes, and laughter that echoes through our home.</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>A Beautiful Home</h3>
+                    <p>Creating a sanctuary of warmth, comfort, and belonging for the entire family.</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Shared Dreams</h3>
+                    <p>Turning dreams into reality together, supporting each other's aspirations and goals.</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Forever & Always</h3>
+                    <p>A love story that transcends time, inspiring everyone around us to believe in true love.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">How Well Do You Know Them?</h2>
+            <div class="quiz-container">
+                <div class="quiz-item">
+                    <h4>Their First Date Destination?</h4>
+                    <div class="quiz-options">
+                        <button class="quiz-btn">Coffee Café</button>
+                        <button class="quiz-btn">Movie Theater</button>
+                        <button class="quiz-btn">Park Walk</button>
+                        <button class="quiz-btn">Restaurant</button>
+                    </div>
+                </div>
+                <div class="quiz-item">
+                    <h4>Favorite Holiday Destination Together?</h4>
+                    <div class="quiz-options">
+                        <button class="quiz-btn">Mountains</button>
+                        <button class="quiz-btn">Beach</button>
+                        <button class="quiz-btn">City Tour</button>
+                        <button class="quiz-btn">Village</button>
+                    </div>
+                </div>
+                <p class="quiz-note">✏️ Customize these questions with your personal details!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Messages Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Share Your Love & Wishes</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Send Your Heartfelt Messages</h3>
+                    <p>We'd love to hear your wishes, memories, and blessings for this special milestone!</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>wishes@anniversary.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message or Wishes..." rows="6" required></textarea>
+                    <button type="submit" class="submit-btn">Send Wishes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 A Celebration of Love. Created with <i class="fas fa-heart"></i> for our Silver Jubilee</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
